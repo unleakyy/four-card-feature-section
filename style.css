@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./font/Poppins/Poppins-Medium.ttf);
+}
+
+body {
+    background-color: hsl(0, 0%, 83%);
+    padding: 40px;
+    margin: 20px auto;
+    width: 500px;
+}
+
+header {
+    background-color: hsl(0, 0%, 83%);
+    margin: 0px 0px 80px;
+}
+
+main {
+    background-color: hsl(0, 0%, 83%);
+}
+
+.supervisor {
+    border-top: 6px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+    border-top: 6px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 6px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 6px solid hsl(212, 86%, 64%);
+}
+
+section {
+    border-radius: 10px;
+    padding: 15px 30px 30px;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.45);
+    margin: 0px 0px 30px;
+    background-color: white;
+}
+
+.middle-section {
+    padding: 0px;
+    background-color: hsl(0, 0%, 83%);
+    box-shadow: none;
+}
+
+section h2 {
+    font-size: 1.5rem;
+}
+
+section p {
+    font-size: 1rem;
+    margin: 10px 0px 30px;
+}
+
+figure {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 10px;
+}
+
+img {
+    width: 50px;
+}
+
+header p,
+header span {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+aside {
+    margin-bottom: 10px;
+}
+
+aside span {
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+aside p {
+    font-size: 1.7rem;
+}
+
+@media (min-width: 1260px) {
+
+    body {
+        width: 1280px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header p {
+        padding: 0px 300px;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+    }
+
+    .supervisor,
+    .calculator,
+    .team-builder,
+    .karma {
+        flex-basis: 43%;
+    }
+
+    .middle-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 30px;
+        padding: 0%;
+    }
+}
